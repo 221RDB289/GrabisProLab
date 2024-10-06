@@ -17,7 +17,7 @@
 ### Prasības
 ### Algoritms
 ### Konceptu modelis
-![Konceptu modelis](https://ibb.co/q7RrDsZ)
+![Konceptu modelis](https://i.ibb.co/XjzCWsw/PROLAB-WHITE.png)
 ### Tehnoloģiju steks
 ### Programmatūras apraksts
 
