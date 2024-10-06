@@ -1,5 +1,9 @@
 # Basketbola spēles rezultāta prognozēšana
 
+## Ievads
+### Problēmas nostādne
+### Darba un novērtēšanas mērķis
+
 ## Līdzīgo risinājumu pārskats
 | Nr. | Risinājuma nosaukums | Īss apraksts | Svarīgākās iezīmes | Ierobežojumi |
 | - | - | - | - | - |
@@ -8,6 +12,20 @@
 | 3. | Lineāras regresijas modeļu lietošana prognozešanai [3]| Zinātniskais papīrs kas apraksta basketbola rezultātu prognozēšanu izmantojot regresijas, analīzes un Puasona modeļus. | <li>Uz datiem balstīta precizitāte izmantojot regresijas analīzes un Puasona modeļus ļauj prognozēt, pamatojoties uz stingriem un uzticamiem datiem.</li><li>Pielāgojamība kas ļauj pielāgot konkrētām līgām vai komandām, pielāgojot parametrus, pamatojoties uz kontekstu (piemēram, mājas/izbraukuma spēles, traumu ietekme, vēsturiskie savstarpējie rezultāti).</li><li> Kvantifikējama nenoteiktība kas tiek iegūta ar varbūtības metodēm kas ļauj modelim nodrošināt ticamības intervālus ap prognozēm, sniedzot lietotājiem ieskatu par iespējamo rezultātu mainīgumu.</li> | <li> Ja tiek izmantots pārāk daudz vēsturisko datu vai pārāk daudz mainīgo, tad modelis var kļūt pārāk sarežģīts, iespējams, pārmērīgi pielāgojot datus.</li><li> Lai saglabātu precizitāti, modeļiem ir pastāvīgi jāatjaunina jaunākie dati (piemēram, pašreizējā spēlētāja forma, komandas izmaiņas, savainojumi utt.). Ja prognozes netiek regulāri atjauninātas, tās var kļūt novecojušas un mazāk ticamas.</li>|
 | 4. | - | - | - | - |
 | 5. | - | - | - | - |
+
+## Tehniskais risinājums
+### Prasības
+### Algoritms
+### Konceptu modelis
+![Konceptu modelis](https://ibb.co/q7RrDsZ)
+### Tehnoloģiju steks
+### Programmatūras apraksts
+
+## Novērtējums
+### Novērtēšanas plāns
+### Novērtēšanas rezultāti
+
+## Secinājumi
 
 ## Informācijas avoti
 1. https://www.forebet.com/en/what-is-forebet
