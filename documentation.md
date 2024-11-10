@@ -15,6 +15,26 @@
 
 ## Tehniskais risinājums
 ### Prasības
+1. Nepiereģistrēta lietotāja tiesības.
+    1. Apskatīt publiski pieejamo informāciju (mājaslapas aprakstu).
+    2. Reģistrēties kā jaunam lietotājam.
+    3. Pieslēgties kā esošam klietam.
+3. Reģistrēta lietotāja tiesības.
+     1. Apskatīt publiski pieejamo informāciju (mājaslapas aprakstu).
+     2. Apskatīt spēļu grafiku.
+     3. Apskatīt spēļu prognozes (punktus un rezultātu ar norādītu varbūtību).
+     4. Apskatīt detalizētāku informāciju par konkrētu spēli (spēlētāju sastāvu, iepriekšēju spēļu rezultātus starp esošajām komandām - ja tādas ir bijušas).
+     5. Salīdzināt patieso spēles rezultātu ar prognozi.
+     6. Atlasīt spēles pēc basketbola kluba un līgas.
+     7. Izrakstīties no profila.
+5. Administratora tiesības.
+     1. Veikt visas darbības, ko spēj reģistrēts lietotājs.
+     2. Atjaunot spēļu grafiku.
+         1. Pievienot jaunas spēles starp komandām.
+         2. Pievienot patiesos spēļu rezultātus (norādīt uzvarētāju un punktu skaitu).
+     3. Veikt darbības ar reģistrēto lietotāju profiliem.
+         1. Dzēst/deaktivizēt/aktivizēt reģistrētu lietotāju profilus.
+         2. Apskatīt reģistrēto lietotāju statistiku (kuras spēles viņiem visvairāk interesē - pēc skatījumu skaita).
 ### Algoritms
 ### Konceptu modelis
 ![Konceptu modelis](https://i.ibb.co/ZNDfQwL/PROLAB2-drawio.png)
