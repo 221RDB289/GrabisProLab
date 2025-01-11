@@ -39,7 +39,7 @@
 ### Konceptu modelis
 ![Konceptu modelis](https://i.ibb.co/ZNDfQwL/PROLAB2-drawio.png)
 ### Tehnoloģiju steks
-![Tehnologiju steks](https://i.imgur.com/aLlZzzy.png)
+![Tehnologiju steks](https://i.ibb.co/gZmp4YW/Tehnolo-iju-steks-3.png)
 ### Programmatūras apraksts
 
 ## Novērtējums
