@@ -63,7 +63,7 @@ Novērtējuma datu kopa sastāvēs no vairākiem prognozētajiem basketbola spē
 #### Novērtēšanas mēri
 Risinājuma novērtēšanas plānā tiks pielietots prognozēšanas modeļa precizitātes koeficients, par spēles iznākumu “kura komanda uzvarēs” – cik spēles iznākumus modelis prognozēja pareizi. Modeļa novērtēšanai ir vajadzīgs arī modeļa precizitātes mērs par pašiem prognozētajiem spēles punktiem.
 ### Novērtēšanas rezultāti
-|Modeļa numurs | unktu prognozēšanas precizitāte (%) | Uzvarētāju prognozēšanas precizitāte (%)|
+|Modeļa numurs | Punktu prognozēšanas precizitāte (%) | Uzvarētāju prognozēšanas precizitāte (%)|
 | - | - | - |
 | 1. | 84.89 | 57.62|
 | 2. | 82 | 62.91|
