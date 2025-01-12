@@ -2,7 +2,10 @@
 
 ## Ievads
 ### Problēmas nostādne
+Basketbola spēļu rezultātu prognozēšana ir diezgan sarežģīta lieta, jo jāņem vērā ļoti daudz dažādu faktoru, un ne vienmēr visi ir skaidri saprotami vai viegli analizējami. Parasti, kad cilvēki cenšas prognozēt rezultātus, tas vairāk balstās uz intuīciju par pagājušajām spēlēm, kas parasti noved pie kļudainām prognozēm un ja tādas ir liktas - sliktām likmēm. Šī problēma ir īpaši aktuāla profesionālajā sportā, kur precīza prognoze var būt svarīga gan komandas stratēģijai, gan biznesa lēmumiem, piemēram, saistībā ar totalizatoriem vai sponsoriem.
+
 ### Darba un novērtēšanas mērķis
+Šī darba galvenais mērķis ir izpētīt un izveidot prognozēšanas modeli, kas varētu efektīvi analizēt datus par pagājušām spēlēm un prognozēt spēles rezultātu ar pēc iespējas lielāku precizitāti. Novērtēšanas ietvaros būtu nepieciešams novērtēt cik precīzi modelis prognozē balstoties uz datiem un apmācības pieeju.
 
 ## Līdzīgo risinājumu pārskats
 | Nr. | Risinājuma nosaukums | Īss apraksts | Svarīgākās iezīmes | Ierobežojumi |
@@ -36,6 +39,13 @@
          1. Dzēst/deaktivizēt/aktivizēt reģistrētu lietotāju profilus.
          2. Apskatīt reģistrēto lietotāju statistiku (kuras spēles viņiem visvairāk interesē - pēc skatījumu skaita).
 ### Algoritms
+1.	Ielādē un apstrādā datus no datu bāzes - nolasām spēļu datus un komandu statistiku, apvienojam tos, pārvēršot komandu nosaukumus skaitļos un pievienojot komandu sezonas datus. 
+2.	Sagatavo ievaddatus un mērķus - izveido ievaddatus (komandu un spēļu statistiku) un mērķus (spēļu rezultātus), kas tiks izmantoti modeļa treniņam. 
+3.	Izveido neironu tīkla modeli - konstruē modeli ar vairākiem slāņiem, kas spēj mācīties sarežģītas attiecības starp komandu statistiku un spēļu rezultātiem. 
+4.	Apmāca modeli ar sagatavotajiem datiem - trenē modeli, izmantojot visus apstrādātos gadu datus, optimizējot tā spēju prognozēt spēļu rezultātus. 
+5.	Saglabā un izmanto modeli prognozēm - saglabā apmācīto modeli un izmanto to, lai prognozētu spēļu rezultātus, ievadot jaunos komandu datus.
+![image](https://github.com/user-attachments/assets/e7eeeb41-d53a-4259-b1b6-baca263cf88f)
+
 ### Konceptu modelis
 ![Konceptu modelis](https://i.ibb.co/ZNDfQwL/PROLAB2-drawio.png)
 ### Tehnoloģiju steks
@@ -44,6 +54,11 @@
 
 ## Novērtējums
 ### Novērtēšanas plāns
+Novērtējuma datu kopa sastāvēs no vairākiem prognozētajiem basketbola spēļu ierakstiem ar šādiem mainīgajiem:
+•	Prognozētais spēles iznākums (kura komanda uzvarēs).
+•	Prognozētā varbūtība, ka šī komanda uzvarēs.
+Risinājuma novērtēšanas plānā tiks pielietots prognozēšanas modeļa precizitātes koeficients, par spēles iznākumu “kura komanda uzvarēs” – cik spēles iznākumus modelis prognozēja pareizi. Modeļa novērtēšanai ir vajadzīgs arī modeļa precizitātes mērs par pašiem prognozētajiem spēles punktiem un apkopot informāciju par modeļa sniegto atbilžu vidējo ātrumu.
+
 ### Novērtēšanas rezultāti
 
 ## Secinājumi
