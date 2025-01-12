@@ -82,7 +82,7 @@ Risinājuma novērtēšanas plānā tiks pielietots prognozēšanas modeļa prec
 
 
 ## Informācijas avoti
-1. Forebet [`code`](#https://www.forebet.com/en/what-is-forebet)
+1. Forebet - <https://www.forebet.com/en/what-is-forebet>
 2. <https://www.progsport.com/>
 3. <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1736184>
 4. <https://flask.palletsprojects.com/en/stable/>
