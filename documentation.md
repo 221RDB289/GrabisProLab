@@ -50,7 +50,7 @@ Basketbola spēļu rezultātu prognozēšana ir diezgan sarežģīta lieta, jo j
 ![Tehnologiju steks](https://i.ibb.co/gZmp4YW/Tehnolo-iju-steks-3.png)
 
 ### Programmatūras apraksts
-
+Algoritma un modeļa izstrādē tika lietota Python programmēšanas valoda ar TensorFlow, Pandas un Numpy bibliotēkām - balstoties uz to ka bija vēlme veidot modeli ar neironu tīkliem. Priekš mājaslapas izveides tika lietotas HTML, CSS un JavaScript valodas kā arī Flask lai izveidotu mājas lapu priekš prognozes modeļa. Datu glabāšanai un lietošanai projektā tiek izmantota MySQL datu bāze un lai varētu izmantot mājaslapu jebkurš tiek lietoti PythonAnywhere pakalpojumi.
 
 ## Novērtējums
 ### Novērtēšanas plāns
@@ -79,14 +79,14 @@ Risinājuma novērtēšanas plānā tiks pielietots prognozēšanas modeļa prec
 ![Novērtēšanas rezultāti](https://i.ibb.co/bQsb2N3/chart.png)
 
 ## Secinājumi
-
+Var secināt, ka projekts ir izveidots pēc izvēlētās tēmas ietvariem, bet ir vietas kur varētu to pielabot un padarīt labāku. Izmantojot neirona tīklus lai varētu izveidot modeli priekš rezultātu prognozēšanas bija pareizā izvēle. Pilnviedošanai varētu uztrennēt efektīvāku modeli ar citādākiem parametriem un vairāk datiem, kas iespējams uzlabotu precizitāti prognozēm bet tas varētu prasīt savādāku pieeju un daudz lielāka līmeņa tehnoloģijas un daudz vairāk resursus.
 
 ## Informācijas avoti
 1. Forebet - <https://www.forebet.com/en/what-is-forebet>
-2. <https://www.progsport.com/>
-3. <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1736184>
-4. <https://flask.palletsprojects.com/en/stable/>
-5. <https://help.pythonanywhere.com/pages/>
-6. <https://dev.mysql.com/doc/>
-7. <https://docs.python.org/3/>
-8. <https://www.tensorflow.org/api_docs>
+2. Progsport - <https://www.progsport.com/>
+3. Lineāras regresijas piemērs ar basketbola statistiku - <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1736184>
+4. Flask dokumentācija - <https://flask.palletsprojects.com/en/stable/>
+5. PythonAnywhere dokumentācija - <https://help.pythonanywhere.com/pages/>
+6. MySQL dokumentācija - <https://dev.mysql.com/doc/>
+7. Python 3 Dokumentācija - <https://docs.python.org/3/>
+8. TensorFlow bibliotēkas dokumentācija - <https://www.tensorflow.org/api_docs>
