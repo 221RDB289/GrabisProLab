@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/03a61f33-5262-4dd9-ad05-9e0f15022f86)# Basketbola spēles rezultāta prognozēšana
+# Basketbola spēles rezultāta prognozēšana
 
 ## Ievads
 ### Problēmas nostādne
