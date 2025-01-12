@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Visas spēles</h1>
+      <table>
+        <thead>
+            <tr>
+                <th>Gads</th>
+                <th>Spēles ID</th>
+                <th>Apmeklētājs/Neitrāls</th>
+                <th>Apmeklētāju punkti</th>
+                <th>Mājas/Neitrāls</th>
+                <th>Mājas punkti</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for game in games %}
+                <tr>
+                    <td>{{ game.Year }}</td>
+                    <td>{{ game.GameID }}</td>
+                    <td>{{ game.Visitor_Neutral }}</td>
+                    <td>{{ game.VPTS }}</td>
+                    <td>{{ game.Home_Neutral }}</td>
+                    <td>{{ game.HPTS }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+
+    <div class="pagination">
+        {% if page > 1 %}
+            <a href="{{ url_for('all_games', page=page-1) }}">Iepriekšējā</a>
+        {% endif %}
+        <span>Lapa {{ page }} no {{ total_pages }}</span>
+        {% if page < total_pages %}
+            <a href="{{ url_for('all_games', page=page+1) }}">Nākošā</a>
+        {% endif %}
+    </div>
+{% endblock %}

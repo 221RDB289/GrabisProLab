@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Basketbola spēles rezultāta prognozēšana</title>
+</head>
+<body style="display: flex;">
+    <div class="container" style="max-width: 500px;">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash">
+                    {% for category, message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+        <h1>Reģistrēties</h1>
+        <form method="POST">
+            <input type="text" name="username" placeholder="Lietotājvārds" required>
+            <input type="password" name="password" placeholder="Parole" required>
+            <input type="email" name="email" placeholder="E-pasts" required>
+            <input type="text" name="favorite_team" placeholder="Mīļākā komanda">
+            <input type="number" name="age" placeholder="Vecums">
+            <button type="submit">Reģistrēties</button>
+        </form>
+        <p>Ir jau konts? <a href="{{ url_for('login') }}">Pieslēgties šeit</a>.</p>
+
+    </div>
+</body>
+</html>

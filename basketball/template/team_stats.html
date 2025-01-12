@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Komandas statistika</h1>
+      <table>
+        <thead>
+            <tr>
+                <th>Gads</th>
+                <th>Rangs (Rk)</th>
+                <th>Komanda</th>
+                <th>Kopumā</th>
+                <th>Mājas</th>
+                <th>Ceļš</th>
+                <th>Konference Austrumi</th>
+                <th>Konference Rietumi</th>
+                <th>Atlantijas divīzija</th>
+                <th>Centrālā divīzija</th>
+                <th>Dienvidaustrumu divīzija</th>
+                <th>Ziemeļrietumu divīzija</th>
+                <th>Pacific divīzija</th>
+                <th>Dienvidrietumu divīzija</th>
+                <th>All-Star pirms</th>
+                <th>All-Star pēc</th>
+                <th>Robeža (3 punkti)</th>
+                <th>Robeža (10 punkti)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for game in games %}
+                <tr>
+                    <td>{{ game.Year }}</td>
+                    <td>{{ game.Rk }}</td>
+                    <td>{{ game.Team }}</td>
+                    <td>{{ game.Overall }}</td>
+                    <td>{{ game.Home }}</td>
+                    <td>{{ game.Road }}</td>
+                    <td>{{ game.Conference_E }}</td>
+                    <td>{{ game.Conference_W }}</td>
+                    <td>{{ game.Division_A }}</td>
+                    <td>{{ game.Division_C }}</td>
+                    <td>{{ game.Division_SE }}</td>
+                    <td>{{ game.Division_NW }}</td>
+                    <td>{{ game.Division_P }}</td>
+                    <td>{{ game.Division_SW }}</td>
+                    <td>{{ game.All_Star_Pre }}</td>
+                    <td>{{ game.All_Star_Post }}</td>
+                    <td>{{ game.Margin_3 }}</td>
+                    <td>{{ game.Margin_10 }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+
+    <div class="pagination">
+        {% if page > 1 %}
+            <a href="{{ url_for('team_stats', page=page-1) }}">Iepriekšējā</a>
+        {% endif %}
+        <span>Lapa {{ page }} no {{ total_pages }}</span>
+        {% if page < total_pages %}
+            <a href="{{ url_for('team_stats', page=page+1) }}">Nākošā</a>
+        {% endif %}
+    </div>
+{% endblock %}

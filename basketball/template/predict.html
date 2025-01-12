@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Basketbola spēles rezultāta prognozēšana</title>
+</head>
+<body style="display: flex; flex-direction: column;">
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu" style="display: flex; justify-content: space-evenly; width: 500px;">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Rezultāta prognozēšana</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/team_stats" class="nav-link">Komandas statistika</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/all_games" class="nav-link">Visas spēles</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" style="max-width: 500px; width: 100%;">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash">
+                    {% for category, message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+        <h1>Spēles prognozēšana</h1>
+        <form method="POST" action="{{ url_for('predict') }}">
+            <label for="team1">Izvēlies komandu 1:</label>
+            <select id="team1" name="team1" onchange="updateTeam2Options()" required>
+                <option value="" disabled selected>Izvēlies komandu 1</option>
+                {% for team in teams %}
+                <option value="{{ team }}" {% if selected_team1 == team %}selected{% endif %}>
+                    {{ team }}
+                </option>
+                {% endfor %}
+            </select>
+
+            <label for="team2">Izvēlies komandu 2:</label>
+            <select id="team2" name="team2" required>
+                <option value="" disabled selected>Izvēlies komandu 2</option>
+                {% for team in teams %}
+                <option value="{{ team }}" {% if selected_team2 == team %}selected{% endif %}>
+                {{ team }}
+                </option>
+                {% endfor %}
+            </select>
+
+            <button type="submit">Iegūt prognozi</button>
+        </form>
+
+        <div id="prediction">
+            <h2>Prognozētais Uzvarētājs: <span id="winner">{{ winner }}</span></h2>
+            <h3>Prognozētie Punkti: <span id="score">{{ score }}</span></h3>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+<script>
+    function updateTeam2Options() {
+        const team1 = document.getElementById("team1").value;
+        const team2 = document.getElementById("team2");
+
+        [...team2.options].forEach(option => {
+            option.disabled = option.value === team1;
+        });
+    }
+</script>
