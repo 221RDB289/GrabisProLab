@@ -36,6 +36,7 @@ Basketbola spēļu rezultātu prognozēšana ir diezgan sarežģīta lieta, jo j
      3. Veikt darbības ar reģistrēto lietotāju profiliem.
          1. Dzēst/deaktivizēt/aktivizēt reģistrētu lietotāju profilus.
          2. Apskatīt reģistrēto lietotāju statistiku (kuras spēles viņiem visvairāk interesē - pēc skatījumu skaita).
+
 ### Algoritms
 1.	Ielādē un apstrādā datus no datu bāzes - nolasām spēļu datus un komandu statistiku, apvienojam tos, pārvēršot komandu nosaukumus skaitļos un pievienojot komandu sezonas datus. 
 2.	Sagatavo ievaddatus un mērķus - izveido ievaddatus (komandu un spēļu statistiku) un mērķus (spēļu rezultātus), kas tiks izmantoti modeļa treniņam. 
@@ -47,7 +48,9 @@ Basketbola spēļu rezultātu prognozēšana ir diezgan sarežģīta lieta, jo j
 ![Konceptu modelis](https://i.ibb.co/ZNDfQwL/PROLAB2-drawio.png)
 ### Tehnoloģiju steks
 ![Tehnologiju steks](https://i.ibb.co/gZmp4YW/Tehnolo-iju-steks-3.png)
+
 ### Programmatūras apraksts
+
 
 ## Novērtējums
 ### Novērtēšanas plāns
@@ -60,8 +63,10 @@ Novērtējuma datu kopa sastāvēs no vairākiem prognozētajiem basketbola spē
 - Prognozētais punktu skaits.
 - Īstais spēles iznākums (kura komanda uzvarēs).
 - Īstais spēles punktu skaits.
+
 #### Novērtēšanas mēri
 Risinājuma novērtēšanas plānā tiks pielietots prognozēšanas modeļa precizitātes koeficients, par spēles iznākumu “kura komanda uzvarēs” – cik spēles iznākumus modelis prognozēja pareizi. Modeļa novērtēšanai ir vajadzīgs arī modeļa precizitātes mērs par pašiem prognozētajiem spēles punktiem.
+
 ### Novērtēšanas rezultāti
 |Modeļa numurs | Punktu prognozēšanas precizitāte (%) | Uzvarētāju prognozēšanas precizitāte (%)|
 | - | - | - |
@@ -75,7 +80,13 @@ Risinājuma novērtēšanas plānā tiks pielietots prognozēšanas modeļa prec
 
 ## Secinājumi
 
+
 ## Informācijas avoti
-1. https://www.forebet.com/en/what-is-forebet
-2. https://www.progsport.com/
-3. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1736184
+1. Forebet [`code`](#https://www.forebet.com/en/what-is-forebet)
+2. <https://www.progsport.com/>
+3. <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1736184>
+4. <https://flask.palletsprojects.com/en/stable/>
+5. <https://help.pythonanywhere.com/pages/>
+6. <https://dev.mysql.com/doc/>
+7. <https://docs.python.org/3/>
+8. <https://www.tensorflow.org/api_docs>
