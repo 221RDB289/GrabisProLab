@@ -25,9 +25,7 @@ Basketbola spēļu rezultātu prognozēšana ir diezgan sarežģīta lieta, jo j
      2. Apskatīt spēļu grafiku.
      3. Apskatīt spēļu prognozes (punktus un rezultātu ar norādītu varbūtību).
      4. Apskatīt detalizētāku informāciju par konkrētu spēli (spēlētāju sastāvu, iepriekšēju spēļu rezultātus starp esošajām komandām - ja tādas ir bijušas).
-     5. Salīdzināt patieso spēles rezultātu ar prognozi.
-     6. Atlasīt spēles pēc basketbola kluba un līgas.
-     7. Izrakstīties no profila.
+     5. Izrakstīties no profila.
 5. Administratora tiesības.
      1. Veikt visas darbības, ko spēj reģistrēts lietotājs.
      2. Atjaunot spēļu grafiku.
