@@ -52,7 +52,7 @@ def model_preparation():
     model.compile(optimizer='adam', loss=MeanSquaredError(), metrics=['accuracy'])
     model.summary()
 
-    model.fit(all_inputs, all_targets, epochs=10, verbose=0)
+    model.fit(all_inputs, all_targets, epochs=10000, verbose=0)
 
     model.evaluate(all_inputs, all_targets, verbose=1)
     model.save("BBV69.keras")
