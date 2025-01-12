@@ -42,7 +42,6 @@ Basketbola spēļu rezultātu prognozēšana ir diezgan sarežģīta lieta, jo j
 3.	Izveido neironu tīkla modeli - konstruē modeli ar vairākiem slāņiem, kas spēj mācīties sarežģītas attiecības starp komandu statistiku un spēļu rezultātiem. 
 4.	Apmāca modeli ar sagatavotajiem datiem - trenē modeli, izmantojot visus apstrādātos gadu datus, optimizējot tā spēju prognozēt spēļu rezultātus. 
 5.	Saglabā un izmanto modeli prognozēm - saglabā apmācīto modeli un izmanto to, lai prognozētu spēļu rezultātus, ievadot jaunos komandu datus.
-![image](https://github.com/user-attachments/assets/e7eeeb41-d53a-4259-b1b6-baca263cf88f)
 
 ### Konceptu modelis
 ![Konceptu modelis](https://i.ibb.co/ZNDfQwL/PROLAB2-drawio.png)
